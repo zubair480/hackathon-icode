@@ -31,6 +31,124 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+<style>
+  .box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.img-box, .detail-box, .social_box {
+    flex-grow: 1;
+}
+
+</style>
+
+<style>
+  .card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    color: #666;
+  }
+</style>
+<style>
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-md-4 {
+    flex: 1 0 33.333333%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card-body {
+    margin-top: auto;
+  }
+</style>
+<style>
+  .navbar-brand span {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 767px) {
+    .navbar-brand span {
+      max-width: 200px; /* Adjust the max-width as needed for smaller screens */
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .header_section {
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Position at the top */
+  width: 100%; /* Take up full width */
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Optional: Add some styling to the navbar to make it visually stick */
+.custom_nav-container {
+  background-color: rgb(20,9,96);
+  padding: 10px;
+
+
+  
+}
+.header_section .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+
+    top: -15%;
+}
+.header_section {
+  padding: 0%;
+}
+
+
+.card.selected {
+    opacity: 0.2; /* Adjust the opacity value as needed */
+    pointer-events: none;
+}
+
+.selected-layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity value as needed */
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    color: RGB(0 176 223); /* Change the text color */
+    font-size: 30px; /* Change the text size */
+}
+
+
+</style>
+
 
 </head>
 
@@ -61,11 +179,11 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="#home">Home </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#service">Services</a>
+                <a class="nav-link" href="#service">Advantages</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about"> About</a>
@@ -75,16 +193,9 @@
                 <a class="nav-link" href="#team">Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="discord.html">Join Discord</a>
+                <a class="nav-link" href="https://forms.gle/ouX2QpVVfK7Se6Ay5">Join Discord</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
-              </li>
-              <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form> -->
+              
             </ul>
           </div>
         </nav>
@@ -101,25 +212,39 @@
                 <div class="col-md-6 ">
                   <div class="detail-box">
                     <h1>
-                      International <br>
-                      Hackathon
+                      International WordPress<br>
+                      Hackathons
 
                     </h1>
                     <p>
                       Dive into the global hackathon arena, where borders blur and brilliance knows no bounds. Join forces with minds 
                       from around the world, crafting solutions that defy limitations and inspire awe. Unleash your potential on the international stage of innovation!
+                     
                     </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        <!-- Read More -->
-                        Register Now
-                      </a>
+                    
+                    <div class="row">
+                      
+                      <div class="btn-box col-5" >
+                        <a href="https://forms.gle/gE5QWgFTKisndGo97" class="btn1" style="width: auto;">
+                          <!-- Read More -->
+                          Project Submission
+                        </a>
+                      </div>
+
+                      <div class="btn-box col-5" >
+                        <a href="https://forms.gle/DTQ2xTjswcEyqxqN6" class="btn1" style="width: auto;">
+                          <!-- Read More -->
+                          Team Registration
+                        </a>
+                      </div>
+
+
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="images/slider.png" alt="">
                   </div>
                 </div>
               </div>
@@ -132,23 +257,36 @@
                   <div class="detail-box">
                     <h1>
                       Wordpress Theme<br>
-                      Building
+                        Development
                     </h1>
                     <p>
                       Step into the realm of WordPress theme creation with us! Harnessing the latest technologies and design principles, we'll craft stunning themes from 
                       scratch that elevate websites to new heights. Get ready to unleash your creativity and reshape the digital landscape one theme at a time.
                     </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        <!-- Read More -->
-                        Register Now
-                      </a>
+                    <div class="row">
+                      
+                      <div class="btn-box col-5" >
+                        <a href="https://forms.gle/gE5QWgFTKisndGo97" class="btn1" style="width: auto;">
+                          <!-- Read More -->
+                          Project Submission
+                        </a>
+                      </div>
+
+                      <div class="btn-box col-5" >
+                        <a href="https://forms.gle/DTQ2xTjswcEyqxqN6" class="btn1" style="width: auto;">
+                          <!-- Read More -->
+                          Team Registration
+                        </a>
+                      </div>
+
+
                     </div>
+                    
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="images/slider2.png" alt="">
                   </div>
                 </div>
               </div>
@@ -161,23 +299,35 @@
                   <div class="detail-box">
                     <h1>
                      Wordpress Pulgin <br>
-                     Building
+                     Development
                     </h1>
                     <p>
                       Join us as we dive deep into the world of WordPress plugin development, crafting innovative solutions from scratch. Together, we'll harness the power of code to 
                       build plugins that redefine user experiences and set new standards in functionality and design.
                     </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        <!-- Read More -->
-                        Register Now
-                      </a>
+                    <div class="row">
+                      
+                      <div class="btn-box col-5" >
+                        <a href="https://forms.gle/gE5QWgFTKisndGo97" class="btn1" style="width: auto;">
+                          <!-- Read More -->
+                          Project Submission
+                        </a>
+                      </div>
+
+                      <div class="btn-box col-5" >
+                        <a href="https://forms.gle/DTQ2xTjswcEyqxqN6" class="btn1" style="width: auto;">
+                          <!-- Read More -->
+                          Team Registration
+                        </a>
+                      </div>
+
+
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="images/slider3.png" alt="">
                   </div>
                 </div>
               </div>
@@ -203,14 +353,15 @@
       <div class="container ">
         <div class="heading_container heading_center">
           <h2>
-            Our <span>Services</span>
+            Hackathon <span>Advantages</span>
           </h2>
           <p>
             Empowering your hackathon journey with job prospects, project support, and 24/7 assistance.
           </p>
         </div>
-        <div class="row">
-          <div class="col-md-4 ">
+        <div class="row justify-content-center">
+          
+          <div class="col-md-3 ">
             <div class="box ">
               <div class="img-box">
                 <img src="images/s1.png" alt="">
@@ -229,7 +380,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 ">
+          <div class="col-md-3 ">
             <div class="box ">
               <div class="img-box">
                 <img src="images/s2.png" alt="">
@@ -248,7 +399,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 ">
+          <div class="col-md-3 ">
             <div class="box ">
               <div class="img-box">
                 <img src="images/s3.png" alt="">
@@ -256,10 +407,10 @@
               <div class="detail-box">
                 <h5>
                   <!-- Support of Executive Engineers/Professionals -->
-                  Professionals Support 24/7 
+                  Mentorship
                 </h5>
                 <p>
-                  Our dedicated team is available 24/7 to assist you, ensuring a seamless experience throughout the hackathon. Your success is our priority, anytime, anywhere.
+                  Our dedicated team is available to assist you, ensuring a seamless experience throughout the hackathon. Your success is our priority, anytime, anywhere.
                 </p>
                 <!-- <a href="">
                   Read More
@@ -267,6 +418,7 @@
               </div>
             </div>
           </div>
+          
         </div>
         <!-- <div class="btn-box">
           <a href="">
@@ -288,9 +440,7 @@
         <h2>
           About <span>Us</span>
         </h2>
-        <p>
-          Magni quod blanditiis non minus sed aut voluptatum illum quisquam aspernatur ullam vel beatae rerum ipsum voluptatibus
-        </p>
+        
       </div>
       <div class="row">
         <div class="col-md-6 ">
@@ -301,21 +451,11 @@
         <div class="col-md-6">
           <div class="detail-box">
             <h3>
-              We Are iCodeGuru & WPBridge
+              We Are iCodeGuru & WPBrigade
             </h3>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+              Join the first-ever hackathon in Pakistan by iCodeGuru and WPBrigade! Learn from Industry Experts, build amazing projects, and get hired by top companies. Whether you are a web developer, a data scientist, or anything in between, this is your chance to shine! You will also get access to online courses, mentorship programs, and career guidance from iCodeGuru, as well as custom WordPress services and community support from WPBrigade. Don’t miss this opportunity to showcase your skills and talents to the world!
             </p>
-            <p>
-              Molestiae odio earum non qui cumque provident voluptates, repellendus exercitationem, possimus at iste corrupti officiis unde alias eius ducimus reiciendis soluta eveniet. Nobis ullam ab omnis quasi expedita.
-            </p>
-            <a href="">
-              <!-- Read More -->
-              Register Now
-            </a>
           </div>
         </div>
       </div>
@@ -323,372 +463,50 @@
   </section>
 
   <!-- end about section -->
-
-  <!-- why section -->
-
-  <section class="why_section layout_padding" id="details">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Event <span>Details </span>
-        </h2>
-      </div>
-      <div class="why_container">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/w1.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Location 
-            </h5>
-            <p>
-              Join us in breaking barriers and fostering innovation at our <strong>remote hackathon!</strong> Regardless of where you are, everyone is welcome to contribute their unique perspectives and skills. Let's come together as a global community to collaborate, learn, and create meaningful projects that make a difference.
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/w2.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Event Timing
-            </h5>
-            <p>
-              Mark your calendars! Our exciting hackathon kicks off on <strong>February 15th, 2024, at 9:00 PM PKT</strong>, and runs until <strong>February 18th, 2024</strong>. Get ready to dive into a whirlwind of innovation and collaboration as we embark on this exciting journey together.
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/w3.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Team Formation and Registration 
-            </h5>
-            <p>
-              Create teams of 1 to 4 members. Designate one member to register all team members via our Google Forms link. 
-              Need teammates? Visit our <strong>Discord server</strong> to connect with others. Watch for further instructions via email after registration.
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/w4.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Judging Criteria
-            </h5>
-            <p>
-              During the hackathon, your project will undergo thorough evaluation based on several key criteria. Judges will assess the effectiveness of your technology application,
-               the clarity and impact of your presentation, the potential business value of your solution, and the degree of originality it exhibits. Aim to excel in each area to maximize your project's success and stand out among competitors. Good luck!"
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="btn-box">
-        <a href="">
-          Read More
-        </a>
-      </div> -->
+ <!-- Hackathon section -->
+ <section class="service_section layout_padding" id="hackathons">
+  <div class="service_container">
+    <div class="heading_container heading_center col-7" style="align-items: end;">
+      <h2>
+        Our <span>Hackathons</span>
+      </h2>
     </div>
-  </section>
-
-  <!-- end why section -->
-
-  <!-- team section -->
-  <section class="team_section layout_padding" id="team">
-    <div class="container-fluid">
-      <div class="heading_container heading_center">
-        <h2 class="">
-          Our <span> Speakers</span>
-        </h2>
-      </div>
-
-      <!-- Speakers -->
-      <div class="team_container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-1.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Engela Van Eck
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
-              <div class="social_box">
-                <a href="#">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div>
+    <div class="container mt-5">
+      <div class="row">
+        <!-- First Card -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/hackathon.jpeg" class="card-img-top" alt="Hackathon 1 Image">
+            <div class="card-body">
+              <h5 class="card-title">WordSprint Hackathon</h5>
+              <p class="bg-danger text-white rounded rounded-pill p-1" style="width: 7rem; text-align: center;">Closed</p>
+              <p class="card-text">A WordSprint Hackathon where participants compete to create innovative solutions using technology.</p>
+              <p class="card-text">Last date to apply: 15th Feb 2024</p>
             </div>
+            <a class="btn btn-primary mx-auto mb-2" href="/wordsprintv1.html">More Details</a>
           </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-2.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  <!-- Nancy White -->
-                  Ayesha Mehboob
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
-              <div class="social_box">
-                <a href="#">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-3.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Earl Martinez
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
-              <div class="social_box">
-                <a href="#">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-4.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Josephine Allard
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
-              <div class="social_box">
-                <a href="#">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </div> -->
         </div>
-      </div>
 
-
-
-      <div class="heading_container heading_center " style="margin-top: 5rem;">
-        <h2 class="">
-          Our <span> Judges</span>
-        </h2>
-      </div>
-
-      <div class="team_container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-1.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Saad Siddique
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
-              <div class="social_box">
-                <a href="#">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div>
+        <!-- Second Card -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/hackathon2.jpg" class="card-img-top" alt="Hackathon 2 Image">
+            <div class="card-body">
+              <h5 class="card-title">WordSprint Hackathon 2.0</h5>
+              <p class="bg-success text-white rounded rounded-pill p-1" style="width: 7rem; text-align: center;">Ongoing</p>
+              <p class="card-text">Another WordSprint Hackathon where participants will have the opportunity to showcase their skills and creativity.</p>
+              <p class="card-text">Last date to apply:  27th April 2024</p>
             </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-2.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Zain ul Abideen
-
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
-              <div class="social_box">
-                <a href="#">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-3.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Earl Martinez
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
-              <div class="social_box">
-                <a href="#">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-4.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Josephine Allard
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
-              <div class="social_box">
-                <a href="#">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
+            <a class="btn btn-primary mx-auto mb-2" href="/wordsprintv2.html">More Details</a>
           </div>
         </div>
       </div>
-      
     </div>
-  </section>
-  <!-- end team section -->
+  </div>
+</section>
 
+
+ 
 
 
   <!-- info section -->
@@ -697,44 +515,23 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_contact">
-            <h4>
-              Address
-            </h4>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
-            </div>
-          </div>
+          <h4>
+            Social Address
+          </h4>
           <div class="info_social">
-            <a href="">
+            <a href="https://www.facebook.com/iCodeguru/">
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+            <a href="https://www.youtube.com/@iCodeGuru0">
+              <i class="fa fa-youtube" aria-hidden="true"></i>
             </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <a href="https://icodeguru.weebly.com/">
+              <i class="fa fa-globe" aria-hidden="true"></i>
             </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
+            <a href="mailto:icodeprime@gmail.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i>        
             </a>
+            
           </div>
         </div>
         <div class="col-md-6 col-lg-3 info_col">
@@ -760,7 +557,7 @@
                 About
               </a>
               <a class="" href="#service">
-                Services
+                Advantages
               </a>
               
               <a class="" href="#team">
@@ -769,7 +566,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 info_col ">
+        <!-- <div class="col-md-6 col-lg-3 info_col ">
           <h4>
             Subscribe
           </h4>
@@ -779,7 +576,7 @@
               Subscribe
             </button>
           </form>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
