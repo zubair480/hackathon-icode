@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> WordSprint Developers Hackathon  </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<!-- Make sure to include the Material Icons library -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+  <!-- Include Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<style>
+  .box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.img-box, .detail-box, .social_box {
+    flex-grow: 1;
+}
+
+
+
+
+</style>
+
+<style>
+  .card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    color: #666;
+  }
+</style>
+<style>
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-md-4 {
+    flex: 1 0 33.333333%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card-body {
+    margin-top: auto;
+  }
+</style>
+<style>
+  .navbar-brand span {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 767px) {
+    .navbar-brand span {
+      max-width: 200px; /* Adjust the max-width as needed for smaller screens */
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .header_section {
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Position at the top */
+  width: 100%; /* Take up full width */
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Optional: Add some styling to the navbar to make it visually stick */
+.custom_nav-container {
+  background-color: rgb(20,9,96);
+  padding: 10px;
+
+
+  
+}
+.header_section .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+
+    top: -15%;
+}
+.header_section {
+  padding: 0%;
+}
+
+
+.card.selected {
+    opacity: 0.2; /* Adjust the opacity value as needed */
+    pointer-events: none;
+}
+
+.selected-layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity value as needed */
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    color: RGB(0 176 223); /* Change the text color */
+    font-size: 30px; /* Change the text size */
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+  <div class="hero_area" style="min-height: 0px; ">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              WordSprint Developers Hackathon
+
+            </span>
+          </a>
+
+         
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item ">
+                <a class="nav-link" href="/">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#service">Advantages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#about"> About</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://forms.gle/SbPcRWrYsjn5v7pt7">Registration</a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    
+  </div>
+
+
+   
+
+
+  <!-- why section -->
+  <section class="service_section layout_padding" id="service">
+
+      <div class="row my-2 mx-3">
+        <div class="col-auto">
+          <a href="#" id="back-button" class="btn btn-outline-dark  back-button d-flex align-items-center">
+            <span class="material-icons mr-2">arrow_back</span>
+            Go Back
+          </a>
+        </div>
+      </div> 
+      
+      
+    
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            WordSprint Hackathon 5.0 <span>Details</span>
+          </h2>
+          
+        </div>
+        <div class="row m-5">
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/w1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Location
+                </h5>
+                <p>
+                  Join us in breaking barriers and fostering innovation at our <strong>remote hackathon!</strong> Regardless of where you are, everyone is welcome to contribute their unique perspectives and skills. Let's come together as a global community to collaborate, learn, and create meaningful projects that make a difference.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/w2.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Event Timing
+
+                </h5>
+                <p>
+                  Mark your calendars! Our exciting hackathon kicks off on <strong>1st Nov 2024, Friday (9:00 PM PKT)</strong>, and runs until <strong>4th Nov 2024, Monday (9:00 PM PKT)</strong>. Get ready to dive into a whirlwind of innovation and collaboration as we embark on this exciting journey together.
+                </p>
+                <!-- <a href="">
+                  Read More
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row m-5">
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/w3.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Team Formation and Registration 
+                </h5>
+                <p>
+                  Create teams of 1 to 4 members. Designate one member to register all team members via our Google Forms link. 
+                  Need teammates? Visit our <strong>Discord server</strong> to connect with others. Watch for further instructions via email after registration.
+                </p>
+                <!-- <a href="">
+                  Read More
+                </a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/w4.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Judging Criteria
+
+                </h5>
+                <p>
+                  Throughout the evaluation process, your project will be judged on slides, video demo, prototype functionality, Git usage, code quality, and requirement coverage. Aim for excellence in each area to maximize your project's success. Good luck!
+                </p>
+                <!-- <a href="">
+                  Read More
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="btn-box">
+          <a href="">
+            View All
+          </a>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+
+ 
+  <!-- end why section -->
+
+  <!-- team section -->
+  <section class="team_section layout_padding" id="team">
+    <div class="container-fluid">
+      <div class="heading_container heading_center">
+        <h2 class="">
+          Our <span> Speakers</span>
+        </h2>
+      </div>
+
+      <!-- Speakers -->
+      <div class="team_container">         
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="./images/female.png" class="img1" alt=""> 
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Zartashia Afzal
+                </h5>
+                <p>
+                  Tips and Tricks: How to Pitch Presentation for Hackathon
+                </p> 
+                <strong>Monday 28 October, 10PM PKT</strong>
+              </div>
+              <div class="social_box" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                
+                <a href="https://www.linkedin.com/in/zartashiaafzal/">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                
+              </div>
+            </div>
+          </div>        
+        </div>
+      </div>
+
+
+
+      <div class="heading_container heading_center " style="margin-top: 5rem;">
+        <h2 class="">
+          Our <span> Judges</span>
+        </h2>
+      </div>
+
+      <div class="team_container">
+        <div class="row" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="./images/zubair_jamil.jpeg.jpg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Zubair Jamil
+                </h5>
+                <p>
+                  WordPress Developer 
+                </p>
+              </div>
+              <div class="social_box" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                
+                <a href="https://www.linkedin.com/in/mezubair/">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+           <div class="col-lg-3 col-sm-6">
+              <div class="box ">
+                <div class="img-box">
+                  <img src="./images/adnan_sultan.jpg" class="img1" alt="" style="border-radius: 10px;">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Adnan Sultan
+                  </h5>
+                  <p>
+                    WordPress Developer 
+                  </p>
+                </div>
+                <div class="social_box" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                  
+                  <a href="https://www.linkedin.com/in/mr-qurban/">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="box ">
+                <div class="img-box">
+                  <img src="/hackathon/images/Talha.jpg" class="img1" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Muhammad Talha
+                  </h5>
+                  <p>
+                    Software Engineer
+                  </p>
+                </div>
+                <div class="social_box" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                  
+                  <a href="https://www.linkedin.com/in/muhammadarslan-/">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/arslan.jpeg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Muhammad Arslan
+                </h5>
+                <p>
+                  Software Engineer
+                </p>
+              </div>
+              <div class="social_box" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                
+                <a href="https://www.linkedin.com/in/muhammadarslan-/">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/usama.jpg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Usama Zafar
+                </h5>
+                <p>
+                  Software Engineer
+                </p>
+              </div>
+              <div class="social_box" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                
+                <a href="https://www.linkedin.com/in/uz63012/">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/mudassir.jpeg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Mudassir Fayaz
+                </h5>
+                <p>
+                  Software Engineer
+                </p>
+              </div>
+              <div class="social_box" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                
+                <a href="https://www.linkedin.com/in/mudassirfayaz/">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/maha.jpeg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Maha Zainab
+                </h5>
+                <p>
+                  Software Engineer
+                </p>
+              </div>
+              <div class="social_box" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                
+                <a href="https://www.linkedin.com/in/mahazainab/">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                
+              </div>
+            </div>
+          </div> -->
+          
+          
+          
+         
+          
+        </div>
+      </div>
+
+
+      <div class="heading_container heading_center mt-5">
+        <h2 class="">
+          Our <span> Mentors</span>
+        </h2>
+      </div>
+
+      <!-- Mentors -->
+      <div class="team_container">
+        <div class="row" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+          
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/usamanisar.jpeg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Usama Nisar
+                </h5>
+                <p>
+                  Software Engineer 
+                </p>
+                
+              </div>
+              <div class="social_box" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                
+                <a href="https://www.linkedin.com/in/usama-nisar/">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-sm-6">
+            <div class="box">
+                <div class="img-box">
+                    <img src="images/arham.jpeg" class="img1" alt="">
+                </div>
+                <div class="detail-box">
+                    <h5>Muhammad Arham</h5>
+                    <p>Software Engineer</p>
+                    
+                </div>
+                <div class="social_box">
+                    <a href="https://www.linkedin.com/in/arhamansari12/" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="box">
+              <div class="img-box">
+                  <img src="images/osama.jpeg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                  <h5>Osama Ghaffar</h5>
+                  <p>Software Engineer</p>
+                  
+              </div>
+              <div class="social_box">
+                  <a href="https://www.linkedin.com/in/osama-ghaffar/" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="box">
+              <div class="img-box">
+                  <img src="images/zulfiqar.jpeg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                  <h5>Zulfiqar Ali Mir </h5>
+                  <p>Quantitative Developer & Analyst</p>
+                  
+              </div>
+              <div class="social_box">
+                  <a href="https://www.linkedin.com/in/zulfiqar-ali-mir" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="box">
+            <div class="img-box">
+                <img src="/hackathon/images/mubashir.jpeg" class="img1" alt="">
+            </div>
+            <div class="detail-box">
+                <h5>Muhammad Mubashir</h5>
+                <p>Software Engineer</p>
+                
+            </div>
+            <div class="social_box">
+                <a href="https://www.linkedin.com/in/mianmubashir105/" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="box">
+          <div class="img-box">
+              <img src="/hackathon/images/female.png" class="img1" alt="">
+          </div>
+          <div class="detail-box">
+              <h5>Ayesha Aslam</h5>
+              <p>Software Engineer</p>
+              
+          </div>
+          <div class="social_box">
+              <a href="https://www.linkedin.com/in/ayesha-ch00/" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+          </div>
+      </div>
+  </div>
+
+      
+   
+  
+         
+        
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <!-- end team section -->
+
+<!-- Challangers -->
+<section class="pt-5 pb-5" >
+  <div class="container">
+      <div class="row">
+          <!-- <div class="col-6">
+              <h3 class="mb-3">Carousel cards title </h3>
+              Our <span>Challanges</span>
+          </div> -->
+          <div class="heading_container heading_center col-7" style="align-items: end;">
+            <h2>
+              Our <span>Challenges  </span>
+            </h2>
+            
+          </div>
+          <div class="col-5 text-right">
+              <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+              </a>
+              <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+              </a>
+          </div>
+          <div class="col-12" >
+              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+        
+
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="row">
+                            <!-- <div class="col-md-4 mb-3">
+                              <div class="card selected">
+                                <div class="card-body">
+                                </div>
+                                <div class="selected-layer">Selected</div>
+                              </div>
+                            </div> -->
+                            <div class="col-md-4 mb-3">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">1# CUSTOM LOGIN PAGE CUSTOMIZER</h4>
+                                  <p class="card-text">Add a feature that allows users to set a video as the background of the login form.Add options to customize placeholders and styling options for input fields in the Login, Register, and Lost Password forms. 
+                                  </p>
+                                  <a href="https://docs.google.com/document/d/1whYfnwbs9TvvDaxsnHsov2K7voDe8y3_cfpWYbvfgww/edit" class="btn btn-primary">Details</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">2# CUSTOM LOGIN PAGE CUSTOMIZER FEATURES</h4>
+                                  <p class="card-text">Implement an option that allows users to see the site's Header and Footer on the Login Page.Include a Form Builder feature that allows users to restructure the WordPress registration form. This tool allows users to add, delete, and reorder form fields. 
+                                  </p>
+                                  <a href="https://docs.google.com/document/d/13OrHy7n5JXFHINGBkrRVGVUIJbGYz8WlVd5qYtMB85U/edit" class="btn btn-primary">Details</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">3# CUSTOM LOGIN PAGE CUSTOMIZER FEATURES</h4>
+                                  <p class="card-text">Implement a feature that allows users to import and export login customizer settings. This will help users apply the same customizations to another website. <br>
+                                    Method 1: Menu Item for Popup Form <br>
+                                    Method 2: Shortcode Implementation
+                                  </p>
+                                  <a href="https://docs.google.com/document/d/1YuorJxjZyf-kGeD91Rhp2tHbOpWFiUQRnCe2IARiDCA/edit" class="btn btn-primary">Details</a>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            
+                          </div>
+                      </div>
+                      
+                    
+                  <div class="carousel-item ">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">4# CUSTOM LOGIN PAGE CUSTOMIZER FEATURES</h4>
+                            <p class="card-text">Implement a feature that allows users to add gradients to the background of the login form. You have to Built a feature to display tooltips that provide help text for each form field. A few customization options would also be needed to style them.   </p>
+                            <a href="https://docs.google.com/document/d/1deYz6BhW-e01nVrmGfbHw9EstWH7x9-Rsi79XtRGAec/edit" class="btn btn-primary">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">5# CUSTOM LOGIN PAGE CUSTOMIZER FEATURES</h4>
+                            <p class="card-text">You need to add a feature in the customizer that allows users to set a slideshow as the background of the login form. Add an option to add a border to the Login form.  
+                            </p>
+                            <a href="https://docs.google.com/document/d/1Ap1lFiN1ehHucdE3BW2gTxXMXhrO7F3HkzyZqs_jSWk/edit" class="btn btn-primary">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">1# UNDER CONSTRUCTION, COMING SOON & MAINTENANCE MODE FEATURES</h4>
+                            <p class="card-text">Add an option to set a background image specifically for mobile devices. Add an option to add a YouTube video to the maintenance page as a background.                        </p>
+                            <a href="https://docs.google.com/document/d/1A6O-yw8oERbYADLlHb5iDHLn5ZnKQ5I02TcXBfDkB-8/edit?usp=sharing" class="btn btn-primary">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item ">
+                  <div class="row">
+
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title">2# UNDER CONSTRUCTION, COMING SOON & MAINTENANCE MODE FEATURES</h4>
+                          <p class="card-text">Make functionality to enable maintenance mode on specific pages of their WordPress site. This feature will allow users to display the under-construction page only on selected pages rather than the entire site.
+                          </p>
+                          <a href="https://docs.google.com/document/d/1rMVrSDyWqCme5vt9Qt7jZqJ_AM8I7b-96uaIJ0rV1Jc/edit?usp=sharing" class="btn btn-primary">Details</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title">1# SIMPLE SOCIAL BUTTONS FEATURES</h4>
+                          <p class="card-text">Add options on different positions for mobile devices to ensure more responsiveness and a better user experience on small devices.
+                          </p>
+                          <a href="https://docs.google.com/document/d/1kIS7CJqnpIFDB-FneVALuIrjMUtOc7DAx-Ds_9j1gMs/edit?usp=sharing" class="btn btn-primary">Details</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title">2# SIMPLE SOCIAL BUTTONS FEATURES</h4>
+                          <p class="card-text">Add functionality to Show the total number of shares and the pages that generated shares within a selected time period.
+
+                          </p>
+                          <a href="https://docs.google.com/document/d/1WGnOVCr8G0AR83BRATDRJ0dlkjEW2dzHnxdgCrO-TDc/edit?usp=sharing" class="btn btn-primary">Details</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+              </div>
+
+
+              <div class="carousel-item ">
+                <div class="row">
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">3# SIMPLE SOCIAL BUTTONS FEATURES</h4>
+                        <p class="card-text">Implement an option to share only the featured image of a post/page on Facebook, rather than the entire page.                          </p>
+                        <a href="https://docs.google.com/document/d/1FjlAklx34KggsrNvSMmODs8TU1doZtFy0sz8SBAC_Vo/edit?usp=sharing" class="btn btn-primary">Details</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">4# SIMPLE SOCIAL BUTTONS FEATURES</h4>
+                        <p class="card-text">Make Media Share Compatibility with Plugin Premium Addons for Elementor’s Media Grid Widget.</p>
+                        <a href="https://docs.google.com/document/d/1nmZvzeS0l3DKuzpZRIagK88BcIVCvU4rBuvSzsBQlmY/edit?usp=sharing" class="btn btn-primary">Details</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">5# SIMPLE SOCIAL BUTTONS FEATURES</h4>
+                        <p class="card-text">URL shortening is a technique on the World Wide Web in which a URL may be made substantially shorter and still direct to the required page. 
+                        </p>
+                        <a href="https://docs.google.com/document/d/1Yec-uTQYUd8D5Qseg4292pAqOEcQjrlRCm7dSL8IhYo/edit?usp=sharing" class="btn btn-primary">Details</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                </div>
+            </div>
+
+            <!-- <div class="carousel-item ">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Collaborative Project Management</h4>
+                      <p class="card-text"> Learners need a way to collaborate on projects together, with the ability to assign tasks, track progress, and share files.
+                      </p>
+                      <a href="https://docs.google.com/document/d/e/2PACX-1vSjCUEUE9ycg4ShFBCd7uXNVz5pAtY3Jz-lzUekoKXSkDfuGVRgd-ezzSKixW__t1Qj0ygbSZUpcQdt/pub" class="btn btn-primary">Details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Skill Tracking and Endorsements</h4>
+                      <p class="card-text"> Learners need a way to track their skills and receive endorsements from trainers and peers, with the ability to display their skills on their portfolio.
+                      </p>
+                      <a href="https://docs.google.com/document/d/e/2PACX-1vTxg5mjZiJgfqIu9TdzIzPIpJXAvHBzJBbTpo5BErOpNZJZgTJiXAaYWQBSbvk5fy9U3ckuwK4DfqJx/pub" class="btn btn-primary">Details</a>
+                    </div>
+                  </div>
+                </div>
+               
+               
+               
+              </div>
+          </div> -->
+
+          <!-- <div class="carousel-item ">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Trainer-Learner Matching</h4>
+                    <p class="card-text">Learners need a way to find and connect with trainers who can provide guidance and mentorship, with the ability to filter by skill, location, and availability.
+                    </p>
+                    <a href="https://docs.google.com/document/d/e/2PACX-1vQVwv1zQtFZOsGZPkPzfKPDYPWIObj9jR4AQbVKBgJpFqhCWf3TdtgYm14liXdbdCAOxBmrSAeaTA2U/pub" class="btn btn-primary" id="button">Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Portfolio Builder</h4>
+                    <p class="card-text">Learners need a way to showcase their projects and achievements in a portfolio, with the ability to customize the layout and design.</p>
+                    <a href="https://docs.google.com/document/d/e/2PACX-1vRybDrK4oTlgt-dqLGljXvPHrU3kdZsOCnWOm1DRam6vnpNv_I9cMJprUsYYShdTkqGzGfllFVriDnO/pub" class="btn btn-primary">Details</a>
+                  </div>
+                </div>
+              </div>
+              
+             
+             
+             
+            </div>
+        </div> -->
+
+       
+
+        
+
+    
+              
+
+                  </div> 
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+  <!-- info section -->
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved.
+        <a href="https://www.linkedin.com/in/qasimvirk90/">Developed by Muhammad Qasim</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+   <!-- Include jQuery -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+   <!-- Include Bootstrap JS -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ 
+   <!-- Include Slick JS -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+  </script>
+ <script>
+    $(document).ready(function() {
+
+        // Navigate to previous page on button click
+        $('#back-button').click(function() {
+            window.history.back();
+        });
+    });
+</script>
+
+
+</body>
+
+</html>
